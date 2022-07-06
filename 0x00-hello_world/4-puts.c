@@ -1,35 +1,35 @@
 #include <stdio.h>
 
+#include <string.h>
+
 
 
 /**
  *
- * * main - Entry point
+ * *main - Main function of my project
  *
  * *
  *
- * * Return: Always 0 (Success)
+ * *
+ *
+ * *Return: return 0 everytime
  *
  * */
 
-
-
 int main(void)
-
-
 
 {
 
 
 
-	char *s = "\"Programming is like building a multilingual puzzle";
+		char displayed[52];
 
 
 
-	puts(s);
+			strcpy(displayed, "\"Programming is like building a multilingual puzzle");
 
+				puts(displayed);
 
-
-	return (0);
+					return (0);
 
 }
