@@ -1,39 +1,47 @@
+/*
+ *
+ *  * File: 6-print_numberz.c
+ *
+ *   * Auth: Brennan D Baraban
+ *
+ *    */
+
+
+
 #include <stdio.h>
 
 
 
 /**
  *
- *  * main - program that prints all single digit numbers of base 10 starting from
+ *  * main - Prints all single digit numbers of base 10 starting from 0,
  *
- *   * You are not allowed to use any variable of type char
+ *   *        only using putchar and without char variables.
  *
- *    * You can only use the putchar function
+ *    *
  *
- *     * Return: 0
+ *     * Return: Always 0.
  *
  *      */
-
-
 
 int main(void)
 
 {
 
-	int n = 48;
+		int num;
 
-	while (n <= 57)
 
-	{
 
-		putchar(n);
+			for (num = 0; num < 10; num++)
 
-		n += 1;
+						putchar((num % 10) + '0');
 
-	}
 
-	printf("\n");
 
-	return (0);
+				putchar('\n');
+
+
+
+					return (0);
 
 }
