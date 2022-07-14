@@ -18,32 +18,32 @@ char *_strncat(char *dest, char *src, int n)
 
 {
 
-		int count = 0, count2 = 0;
+	int count = 0, count2 = 0;
 
-			while (*(dest + count) != '\0')
+	while (*(dest + count) != '\0')
 
-					{
+	{
 
-								count++;
+		count++;
 
-									}
+	}
 
-				while (count2 < n)
+	while (count2 < n)
 
-						{
+	{
 
-									*(dest + count) = *(src + count2);
+		*(dest + count) = *(src + count2);
 
-											if (*(src + count2) == '\0')
+		if (*(src + count2) == '\0')
 
-															break;
+			break;
 
-													count++;
+		count++;
 
-															count2++;
+		count2++;
 
-																}
+	}
 
-					return (dest);
+	return (dest);
 
 }
